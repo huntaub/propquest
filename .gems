@@ -1,3 +1,2 @@
 will_paginate --version '>= 2.3.2'
 paperclip
-actionpack-imagemagick
