@@ -1,0 +1,69 @@
+<% if @section.blank? && @answer.blank? %>
+	<%= render :partial => 'questions/title', :locals => {:title => 'Propaganda Questions'} %>
+<% elsif @answer.blank? %>
+	<%= render :partial => 'questions/title', :locals => {:title => 'Propaganda Questions from Section '+@section.name} %>
+<% else %>
+	<% if @answer.description == "No Technique" %>
+		<%= render :partial => 'questions/title', :locals => {:title => 'No Technique ('+@answer.section.name+')'} %>
+	<% else %>
+		<%= render :partial => 'questions/title', :locals => {:title => @answer.description} %>
+	<% end %>
+<% end %>
+<div id='content_head'>
+<div id='links'>
+	<%= link_to 'All', :controller => 'questions' %>
+	<% Section.find(:all).each do |section| %>
+		<%= link_to 'Section '+section.name, {:controller => 'questions', :action => 'section', :id => section.id } %>
+	<% end %>
+	<% if logged_in %>
+	<br/>
+	<%= link_to 'New Question', new_question_path %>
+	<% end %>
+	<%= link_to 'Quiz', {:controller => 'questions', :action => 'quiz_options'} %>
+</div>
+<div id='user'>
+<%= render :partial => 'users/user_info' %>
+<br/><br/>
+<% if @section.blank? %>
+	<%= link_to 'Top Rated', {:action => 'top_rated'} %>
+<% else %>
+	<%= link_to 'Top Rated', {:action => 'top_rated', :id => @section.id} %>
+<% end %>
+</div>
+</div>
+<table>
+<% @questions.each do |question| %>
+  <tr>
+  	<td class='votes' id='<%= "votes"+question.id.to_s %>'>
+  		<%= render :partial => 'questions/votes', :locals => {:question => question} %>
+  	</td>
+   	<td class='ratingTD' id='<%= "rating" + question.id.to_s %>'>
+   		<%= render :partial => 'questions/current_rate', :locals => {:question => question} %>
+	</td>
+    <td class='question'>
+    	<span class='qTitle'>
+    		<%=link_to h(truncate(question.title, :length => 50)), question %>
+    	</span>
+    	<br/>
+    	<span class='qAnswer'>
+    		<%=h question.section.name %> - <%=link_to h(question.answer.description), question.answer %>
+    	</span>
+    	<br/>
+    	<span class='qLinks'>
+    		<span id='<%= "rate" + question.id.to_s %>'>
+    			<%= render :partial => 'questions/link_to_rate', :locals => {:question => question} %>
+   		 	</span>
+   		<% if session[:user_id] == question.user_id %>
+    		<%= link_to 'Edit', edit_question_path(question) %>
+    		<%= link_to 'Delete', question, :method => :delete %>
+    	<% end %>
+    		<%= link_to question.user.name, question.user, :class => 'right' %>
+    	</span>
+    </td>
+  </tr>
+<% end %>
+</table>
+<br/>
+<div id='page'>
+	<%= will_paginate @questions %>
+</div>

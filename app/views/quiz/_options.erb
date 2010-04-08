@@ -1,0 +1,11 @@
+<div class='selection' id='links'>
+	<%= extra %>
+	<h2> Number of Questions </h2>
+	<div id='questionNumber'>
+		<%= render :partial => 'quiz/option_number', :locals => {:number => 9} %>
+	</div>
+	<h2> Choose a Section to Begin </h2>
+	<div id='section'>
+		<%= render :partial => 'quiz/section_choice' %>
+	</div>
+</div>

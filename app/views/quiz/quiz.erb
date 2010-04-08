@@ -1,0 +1,21 @@
+<h1> Question <%=h session[:q_num] %> of <%=h session[:questions] %> for Section <%=h @section.name %>
+<h2> <%=h @question.title %> </h2>
+<div id='score'>
+	<p> <%= pluralize(session[:score].to_i, 'point') %> </p>
+	<% if session[:q_num].to_i > 1 %>
+		<% if @correct %>
+			<p> The last answer was <span id='c'>correct</span>. </p>
+		<% else %>
+			<p> The last answer was <span id='i'>incorrect</span>. </p>
+			<p> The correct answer was <span id='c'><%= @answer.description %></span>. </p>
+			<p> <%= link_to "View Last Question", @old_question, {:target =>
+			'_blank'} %> </p>
+		<% end %>
+	<% end %>
+</div>
+<div id='links'>
+<% Answer.find_all_by_section_id(@section.id, :order => 'number').each do |a| %>
+	<br/>
+	<%= link_to a.number, {:action => :quiz, :question => @question.id, :id => a.id}, :method => :post %> <%=h a.description %>
+<% end %>
+</div>

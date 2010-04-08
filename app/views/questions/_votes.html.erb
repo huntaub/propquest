@@ -1,0 +1,18 @@
+<%=h question.votes %>
+<% if question.votes == 1 %>
+<div class='unitCaption'>vote</div>
+<% else %>
+<div class='unitCaption'>votes</div>
+<% end %>
+<div class='unitCaption'>
+<% if logged_in %>
+	<%= link_to_remote "+",
+			:url => {:action => :add_vote, 
+					 :id     => question.id},
+	 		:update => 'votes'+question.id.to_s %>
+	<%= link_to_remote "-",
+			:url => {:action => :remove_vote, 
+					 :id     => question.id},
+		 	:update => 'votes'+question.id.to_s %>
+<% end %>
+</div>

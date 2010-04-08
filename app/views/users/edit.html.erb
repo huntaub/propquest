@@ -1,0 +1,20 @@
+<h1> <%= @user.name %> </h1>
+<% form_for @user do |f| %>
+	<%= f.error_messages %>
+	
+	<p>
+		<%= f.label :password, "New Password" %>
+		<%= f.text_field :password %>
+	</p>
+	
+	<p>
+		Current Image <br/>
+		<%= user_photo(@user, :small) %>
+	
+	<p>
+		<%= f.label :photo, "New User Image" %>
+		<%= f.file_field :photo %>
+	</p>
+	
+	<%= f.submit %>
+<% end %>

@@ -1,0 +1,22 @@
+<div class='uInfo'>
+	<h1> <%= @user.name %> </h1>
+	<h2> <%= pluralize(@user.questions.length, 'question') %> </h2>
+	<%= user_photo (@user, :medium) %>
+	<br/>
+	<% if User.find_by_id(session[:user_id]) == @user %>
+		<%= link_to "Edit", edit_user_path(@user) %>
+	<% end %>
+	<div class='uRecent'>
+		<h3> Recent Questions </h3>
+		<hr/>
+		<div class='uQuestions'>
+			<% @questions.each do |q| %>
+				<p> <%= link_to q.title, q %> </p>
+			<% end %>
+		</div>
+		<br/>
+		<div id='page'>
+		<%= will_paginate @questions %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,302 @@
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background: url(../images/metal.png) fixed;
+}
+
+div#all {
+	width: 800px;
+	margin-left: 15%;
+	margin-top: -21px;
+	background: url(../images/bodyBack.png) repeat-y;
+}
+
+div.content {
+	width: 700px;
+	margin-left: 52px;
+	margin-right: -2px;
+	padding-bottom: 10px;
+	min-height: 300px;
+}
+
+div#title {
+	background-image: url(../images/titleBack.png);
+	margin-left: -3px;
+	margin-right: 1px;
+}
+
+div#title h1 {
+	margin-left: 10px;
+	color: #fffeff;
+}
+
+div#footer {
+	background-image: url(../images/footerBack.png);
+	height: 100px;
+	width: 800px;
+	margin-left: 15%;
+}
+
+div#footer_links {
+	text-align: center;
+	padding-top: 10px;
+}
+
+div#footer_links a {
+	text-decoration: none;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #fefffe;
+	font-weight: bold;
+}
+
+div#footer_links a:hover {
+	text-decoration: underline;
+}
+
+div#links a {
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.74);
+	color: #fffeff;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: large;
+}
+
+div#links a:hover {
+	background-color: rgba(72,145,254,0.72);
+}
+
+div#user {
+	float: right;
+	text-align: center;
+	margin-right: 10px;
+	border-style: solid;
+	border-width: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #4b60a6;
+	color: #fefefe;
+	font-weight: bold;
+	padding-bottom: 15px;
+	margin-top: 5px;
+}
+
+div#user img {
+	width: 100px;
+	border: 3px solid #fffeff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+div#user a {
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: white;
+}
+
+div#user a:hover {
+	font-weight: bold;
+}
+
+img.uPhoto {
+	border: 5px solid #fffeff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+div.uInfo {
+	padding-left: 10px;
+	text-align: center;
+}
+
+div.uRecent {
+	text-align: left;
+}
+
+div.uRecent hr {
+	width: 75%;
+	background-color: #000;
+	color: #000;
+}
+
+div.uQuestions {
+	text-align: center;
+}
+
+span#i {
+	color: #b50104;
+}
+
+span#c {
+	color: #31b500;
+}
+
+div#score {
+	float: right;
+	text-align: center;
+	margin-right: 20px;
+	border-style: solid;
+	border-width: 3px;
+	padding-right: 5px;
+	padding-left: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-color: #4b60a6;
+	color: #fefefe;
+	font-weight: bold;
+}
+
+div#score a {
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.74);
+	color: #fffeff;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: large;
+}
+
+div#score a:hover {
+	background-color: rgba(72,145,254,0.72);
+}
+
+div#page {
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+}
+
+div#page a {
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.74);
+	color: #fffeff;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: large;
+}
+
+div#page a:hover {
+	background-color: rgba(72,145,254,0.72);
+}
+
+a.selectedLink {
+	background-color: rgba(72,145,254,0.72);
+}
+
+div.selection {
+	text-align: center;
+}
+
+table.showInfo {
+	float: left;
+	padding-right: 20px;
+}
+
+h2.showTitle {
+}
+
+div.showAnswer {
+	text-align: center;
+}
+
+div.showLinks {
+	font-size: small;
+}
+
+td.votes {
+	width: 40px;
+	height: 50px;
+	background-color: rgba(42,0,255,0.72);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-align: center;
+	white-space: nowrap;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+td.ratingTD {
+	width: 40px;
+	height: 50px;
+	background-color: rgba(245,23,147,0.72);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-align: center;
+	color: #fffeff;
+	font-weight: bold;
+}
+
+span.no_rate {
+	font-size: 12px;
+}
+
+div.unitCaption {
+	font-size: x-small;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+td.votes a {
+	
+	color: #fffeff;
+	text-decoration: none;
+}
+
+td.question {
+	padding-left: 10px;
+	border-bottom: 1px dotted #fffeff;
+}
+
+span.qTitle {
+	font-size: large;
+}
+
+span.qLinks {
+	font-size: x-small;
+}
+
+span.qLinks a {
+	padding-right: 20px;
+}
+
+span.qAnswer {
+	font-size: small;
+}
+
+div.qUser {
+	text-align: right;
+	padding-right: 20px;
+}
+
+div.qUser a {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+}
+
+div.qUser a:hover {
+	font-weight: bold;
+}
+
+.right {
+	text-align: right;
+}
+
+td.question a {
+	text-decoration: none;
+	color: #000;
+}
+
+td.question a:hover {
+	text-decoration: underline;
+}
+
+table {
+	padding-top: 10px;
+}

@@ -1,0 +1,3 @@
+<% @sections.each do |section| %>
+	<%= link_to 'Section '+section.name, {:action => 'quiz', :id => section.id, :questions => 9}, :class => 'section_links' %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1> Total Score of <%= pluralize(session[:score].to_i, 'point') %> </h1>
+<% if session[:q_num].to_i > 1 %>
+	<% if @correct %>
+		<p style='text-align: center;'> The last answer was <span id='c'>correct</span>. </p>
+	<% else %>
+		<p style='text-align: center;'> The last answer was <span id='i'>incorrect</span>. </p>
+		<p style='text-align: center;'> The correct answer was <span id='c'><%= @answer.description %></span>. </p>
+	<% end %>
+<% end %>
+<% @sections = Section.find(:all) %>
+<%= render :partial => 'quiz/options', :locals => { :extra => '<h1> Want another go? </h1>' } %>

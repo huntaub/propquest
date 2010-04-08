@@ -1,0 +1,6 @@
+<% if question.d_total.blank? %>
+	<span class='no_rate'>No Rating</span>
+<% else %>
+	<%= (question.d_total.to_f / question.d_length.to_f).round_with_precision(1) %>
+	<div class='unitCaption'>difficulty</div>
+<% end %>

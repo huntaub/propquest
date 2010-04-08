@@ -1,0 +1,2 @@
+<%= label :question, :answer %><br />
+<%= collection_select :question, :answer_id, Answer.find_all_by_section_id(@section.id, :order => 'number'), :id, :description %>

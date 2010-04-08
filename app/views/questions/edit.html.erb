@@ -1,0 +1,27 @@
+<h1>Editing question</h1>
+
+<% form_for(@question) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title, "Question" %><br />
+    <%= f.text_area :title %>
+  </p>
+  <p>
+    <%= f.label :section %><br />
+    <%= f.collection_select :section_id, Section.find(:all), :id, :name %>
+  </p>
+  <p id='answer'>
+    <%= f.label :answer %><br />
+    <%= f.collection_select :answer_id, Section.find(@question.section_id).answers, :id, :description %>
+  </p>
+  <%= observe_field 'question_section_id',
+  					:url       => {:action => :search_answers},
+  					:with      => 'section' %>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @question %> |
+<%= link_to 'Back', questions_path %>
