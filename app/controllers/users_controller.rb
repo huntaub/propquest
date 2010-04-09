@@ -58,7 +58,6 @@ class UsersController < ApplicationController
   end
   
   def logout
-  	reset_session
   	session[:user_id] = false
   	redirect_to :controller => 'questions', :action => 'index'
   end
