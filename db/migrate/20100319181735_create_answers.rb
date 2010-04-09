@@ -6,11 +6,9 @@ class CreateAnswers < ActiveRecord::Migration
 
       t.timestamps
     end
-    remove_column :sections, :answers
   end
 
   def self.down
     drop_table :answers
-    add_column :sections, :answers, :array
   end
 end

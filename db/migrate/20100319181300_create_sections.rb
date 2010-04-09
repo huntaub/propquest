@@ -2,7 +2,6 @@ class CreateSections < ActiveRecord::Migration
   def self.up
     create_table :sections do |t|
       t.string :name
-      t.array :answers
 
       t.timestamps
     end
