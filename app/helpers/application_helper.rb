@@ -2,10 +2,14 @@
 module ApplicationHelper
 
 def logged_in 
-  unless User.find_by_id(session[:user_id].to_i)
+  if session[:user_id].blank?
     false
   else
-    true
+    unless User.find_by_id(session[:user_id])
+      false
+    else
+      true
+    end
   end
 end
 
