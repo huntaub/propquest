@@ -3,6 +3,7 @@
 	<br/><br/>
 	<%= link_to "Register", :controller => :users, :action => :new %>
 <% else %>
+	<% user = User.find(session[:user_id]) %>
 	<p> Welcome, <%= link_to user.name, user %> </p>
 	<%= user_photo(user, :small) %>
 	<br/>
