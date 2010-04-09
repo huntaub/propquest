@@ -1,4 +1,4 @@
-<% if logged_in %>
+<% if !logged_in %>
 	<%= link_to "Login", :controller => :users, :action => :login %>
 	<br/><br/>
 	<%= link_to "Register", :controller => :users, :action => :new %>
