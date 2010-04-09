@@ -2,7 +2,7 @@
 module ApplicationHelper
 
 def logged_in 
-  unless User.find_by_id(session[:user_id])
+  unless User.find_by_id(session[:user_id].to_i)
     false
   else
     true
