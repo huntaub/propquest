@@ -2,7 +2,9 @@
 module ApplicationHelper
 
 def logged_in 
-  if session[:user_id].nil?
+  if session[:user_id].nil? || session[:user_id].blank?
+    false
+  elsif session[:user_id] == 'f'
     false
   else
     unless User.find_by_id(session[:user_id])
