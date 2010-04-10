@@ -1,6 +1,6 @@
 <div class='uInfo'>
-	<h1> <%= @user.name %> </h1>
-	<h2> <%= pluralize(@user.questions.length, 'question') %> </h2>
+	<h1> <%=h user_name(@user) %> </h1>
+	<h2> <%h= pluralize(@user.questions.length, 'question') %> </h2>
 	<%= user_photo (@user, :medium) %>
 	<br/>
 	<% if User.find_by_id(session[:user_id]) == @user %>

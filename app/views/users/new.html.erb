@@ -2,7 +2,7 @@
 <% form_for @user, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
 	<p>
-		<%= f.label :name, "Username" %>
+		<%= f.label :name, "Username (Max 8 characters)" %>
 		<%= f.text_field :name %>
 	</p>
 	<p>
@@ -10,7 +10,7 @@
 		<%= f.password_field :password %>
 	</p>
 	<p>
-		<%= f.label :photo, "User Image" %>
+		<%= f.label :photo, "Optional User Image" %>
 		<%= f.file_field :photo %>
 	</p>
 	<%= f.submit "Submit" %>

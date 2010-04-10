@@ -4,7 +4,7 @@
 	<%= link_to "Register", :controller => :users, :action => :new %>
 <% else %>
 	<% user = User.find(session[:user_id]) %>
-	<p> Welcome, <%= link_to user.name, user %> </p>
+	<p> Welcome, <%= link_to user_name(user), user %> </p>
 	<%= user_photo(user, :small) %>
 	<br/>
 	<%= link_to "Logout", :controller => :users, :action => :logout %>
