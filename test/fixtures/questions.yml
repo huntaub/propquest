@@ -8,7 +8,7 @@ questions_035:
   d_length: 
   id: "37"
   user_id: "1"
-  description: 
+   
   answer_id: "38"
   d_total: 
 questions_024: 
@@ -20,7 +20,7 @@ questions_024:
   d_length: 
   id: "26"
   user_id: "1"
-  description: 
+   
   answer_id: "30"
   d_total: 
 questions_013: 
@@ -32,7 +32,7 @@ questions_013:
   d_length: 
   id: "15"
   user_id: "1"
-  description: 
+   
   answer_id: "29"
   d_total: 
 questions_002: 
@@ -44,7 +44,7 @@ questions_002:
   d_length: 
   id: "4"
   user_id: "1"
-  description: 
+   
   answer_id: "3"
   d_total: 
 questions_036: 
@@ -56,7 +56,7 @@ questions_036:
   d_length: 
   id: "38"
   user_id: "1"
-  description: 
+   
   answer_id: "37"
   d_total: 
 questions_025: 
@@ -68,7 +68,7 @@ questions_025:
   d_length: 
   id: "27"
   user_id: "1"
-  description: 
+   
   answer_id: "26"
   d_total: 
 questions_014: 
@@ -80,7 +80,7 @@ questions_014:
   d_length: 
   id: "16"
   user_id: "1"
-  description: 
+   
   answer_id: "16"
   d_total: 
 questions_003: 
@@ -92,7 +92,7 @@ questions_003:
   d_length: 
   id: "5"
   user_id: "1"
-  description: 
+   
   answer_id: "7"
   d_total: 
 questions_037: 
@@ -104,7 +104,7 @@ questions_037:
   d_length: 
   id: "39"
   user_id: "1"
-  description: 
+   
   answer_id: "41"
   d_total: 
 questions_026: 
@@ -116,7 +116,7 @@ questions_026:
   d_length: 
   id: "28"
   user_id: "1"
-  description: 
+   
   answer_id: "21"
   d_total: 
 questions_015: 
@@ -128,7 +128,7 @@ questions_015:
   d_length: 
   id: "17"
   user_id: "1"
-  description: 
+   
   answer_id: "18"
   d_total: 
 questions_004: 
@@ -140,7 +140,7 @@ questions_004:
   d_length: 
   id: "6"
   user_id: "1"
-  description: 
+   
   answer_id: "10"
   d_total: 
 questions_038: 
@@ -152,7 +152,7 @@ questions_038:
   d_length: 
   id: "40"
   user_id: "1"
-  description: 
+   
   answer_id: "32"
   d_total: 
 questions_027: 
@@ -164,7 +164,7 @@ questions_027:
   d_length: 
   id: "29"
   user_id: "1"
-  description: 
+   
   answer_id: "25"
   d_total: 
 questions_016: 
@@ -176,7 +176,7 @@ questions_016:
   d_length: 
   id: "18"
   user_id: "1"
-  description: 
+   
   answer_id: "17"
   d_total: 
 questions_005: 
@@ -188,7 +188,7 @@ questions_005:
   d_length: 
   id: "7"
   user_id: "1"
-  description: 
+   
   answer_id: "8"
   d_total: 
 questions_040: 
@@ -200,7 +200,7 @@ questions_040:
   d_length: 
   id: "42"
   user_id: "1"
-  description: 
+   
   answer_id: "34"
   d_total: 
 questions_039: 
@@ -212,7 +212,7 @@ questions_039:
   d_length: 
   id: "41"
   user_id: "1"
-  description: 
+   
   answer_id: "36"
   d_total: 
 questions_028: 
@@ -224,7 +224,7 @@ questions_028:
   d_length: 
   id: "30"
   user_id: "1"
-  description: 
+   
   answer_id: "24"
   d_total: 
 questions_017: 
@@ -238,7 +238,7 @@ questions_017:
   d_length: 
   id: "19"
   user_id: "1"
-  description: 
+   
   answer_id: "14"
   d_total: 
 questions_006: 
@@ -250,7 +250,7 @@ questions_006:
   d_length: 
   id: "8"
   user_id: "1"
-  description: 
+   
   answer_id: "5"
   d_total: 
 questions_041: 
@@ -262,7 +262,7 @@ questions_041:
   d_length: 
   id: "43"
   user_id: "1"
-  description: 
+   
   answer_id: "3"
   d_total: 
 questions_030: 
@@ -274,7 +274,7 @@ questions_030:
   d_length: 
   id: "32"
   user_id: "1"
-  description: 
+   
   answer_id: "19"
   d_total: 
 questions_029: 
@@ -286,7 +286,7 @@ questions_029:
   d_length: 
   id: "31"
   user_id: "1"
-  description: 
+   
   answer_id: "20"
   d_total: 
 questions_018: 
@@ -298,7 +298,7 @@ questions_018:
   d_length: 
   id: "20"
   user_id: "1"
-  description: 
+   
   answer_id: "12"
   d_total: 
 questions_007: 
@@ -310,7 +310,7 @@ questions_007:
   d_length: 
   id: "9"
   user_id: "1"
-  description: 
+   
   answer_id: "9"
   d_total: 
 questions_042: 
@@ -322,7 +322,7 @@ questions_042:
   d_length: 
   id: "44"
   user_id: "1"
-  description: 
+   
   answer_id: "5"
   d_total: 
 questions_031: 
@@ -334,7 +334,7 @@ questions_031:
   d_length: 
   id: "33"
   user_id: "1"
-  description: 
+   
   answer_id: "39"
   d_total: 
 questions_020: 
@@ -346,7 +346,7 @@ questions_020:
   d_length: 
   id: "22"
   user_id: "1"
-  description: 
+   
   answer_id: "13"
   d_total: 
 questions_019: 
@@ -358,7 +358,7 @@ questions_019:
   d_length: 
   id: "21"
   user_id: "1"
-  description: 
+   
   answer_id: "11"
   d_total: 
 questions_008: 
@@ -370,7 +370,7 @@ questions_008:
   d_length: 
   id: "10"
   user_id: "1"
-  description: 
+   
   answer_id: "1"
   d_total: 
 questions_043: 
@@ -382,7 +382,7 @@ questions_043:
   d_length: 
   id: "45"
   user_id: "1"
-  description: 
+   
   answer_id: "28"
   d_total: 
 questions_032: 
@@ -394,7 +394,7 @@ questions_032:
   d_length: 
   id: "34"
   user_id: "1"
-  description: 
+   
   answer_id: "31"
   d_total: 
 questions_021: 
@@ -406,7 +406,7 @@ questions_021:
   d_length: 
   id: "23"
   user_id: "1"
-  description: 
+   
   answer_id: "23"
   d_total: 
 questions_010: 
@@ -418,7 +418,7 @@ questions_010:
   d_length: 
   id: "12"
   user_id: "1"
-  description: 
+   
   answer_id: "2"
   d_total: 
 questions_009: 
@@ -430,7 +430,7 @@ questions_009:
   d_length: 
   id: "11"
   user_id: "1"
-  description: 
+   
   answer_id: "4"
   d_total: 
 questions_044: 
@@ -442,7 +442,7 @@ questions_044:
   d_length: 
   id: "46"
   user_id: "1"
-  description: 
+   
   answer_id: "39"
   d_total: 
 questions_033: 
@@ -454,7 +454,7 @@ questions_033:
   d_length: 
   id: "35"
   user_id: "1"
-  description: 
+   
   answer_id: "33"
   d_total: 
 questions_022: 
@@ -466,7 +466,7 @@ questions_022:
   d_length: 
   id: "24"
   user_id: "1"
-  description: 
+   
   answer_id: "27"
   d_total: 
 questions_011: 
@@ -478,7 +478,7 @@ questions_011:
   d_length: 
   id: "13"
   user_id: "1"
-  description: 
+   
   answer_id: "28"
   d_total: 
 questions_034: 
@@ -490,7 +490,7 @@ questions_034:
   d_length: 
   id: "36"
   user_id: "1"
-  description: 
+   
   answer_id: "35"
   d_total: 
 questions_023: 
@@ -502,7 +502,7 @@ questions_023:
   d_length: 
   id: "25"
   user_id: "1"
-  description: 
+   
   answer_id: "22"
   d_total: 
 questions_012: 
@@ -517,7 +517,7 @@ questions_012:
   d_length: 
   id: "14"
   user_id: "1"
-  description: 
+   
   answer_id: "15"
   d_total: 
 questions_001: 
@@ -529,6 +529,6 @@ questions_001:
   d_length: 
   id: "3"
   user_id: "1"
-  description: 
+   
   answer_id: "6"
   d_total: 
