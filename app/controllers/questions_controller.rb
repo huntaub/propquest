@@ -37,6 +37,11 @@ class QuestionsController < ApplicationController
   # GET /questions/1/edit
   def edit
     @question = Question.find(params[:id])
+    unless @question.user == User.find(session[:user_id])
+      @question = nil
+      flash[:notice] = "Stop messing with URLs."
+      redirect_to :action => "index"
+    end
   end
 
   # POST /questions
@@ -61,6 +66,11 @@ class QuestionsController < ApplicationController
   # PUT /questions/1.xml
   def update
     @question = Question.find(params[:id])
+    unless @question.user == User.find(session[:user_id])
+      @question = nil
+      flash[:notice] = "Stop messing with URLs."
+      redirect_to :action => "index"
+    end
 
     respond_to do |format|
       if @question.update_attributes(params[:question])
@@ -78,6 +88,11 @@ class QuestionsController < ApplicationController
   # DELETE /questions/1.xml
   def destroy
     @question = Question.find(params[:id])
+    unless @question.user == User.find(session[:user_id])
+      @question = nil
+      flash[:notice] = "Stop messing with URLs."
+      redirect_to :action => "index"
+    end
     @question.destroy
 
     respond_to do |format|
@@ -95,6 +110,8 @@ class QuestionsController < ApplicationController
 	  	vote.user_id = params[:user]
 	  	vote.save!
 	  	render :partial => 'votes', :locals => {:question => @question}
+  	else
+  		redirect_to :action => 'index'
   	end
   end
   
@@ -107,6 +124,8 @@ class QuestionsController < ApplicationController
 	  	vote.user_id = params[:user]
 	  	vote.save!
 	  	render :partial => 'votes', :locals => {:question => @question}
+  	else
+  		redirect_to :action => 'index'
   	end
   end
   
@@ -130,13 +149,19 @@ class QuestionsController < ApplicationController
 	 		page.replace_html 'rate'+params[:id].to_s, :partial => 'link_to_rate', :locals => {:question => @question}
 	 		page.replace_html 'rating'+params[:id].to_s, :partial => 'current_rate', :locals => {:question => @question}
  		end
+ 	else
+ 		redirect_to :action => 'index'
  	end
  end
  
  def search_answers
- 	@section = Section.find(params[:section])
- 	render :update do |page|
- 		page.replace_html 'answer', :partial => 'search_answers'
+ 	if request.xhr?
+	 	@section = Section.find(params[:section])
+	 	render :update do |page|
+	 		page.replace_html 'answer', :partial => 'search_answers'
+	 	end
+ 	else
+ 		redirect_to :action => 'index'
  	end
  end
  
@@ -197,5 +222,4 @@ class QuestionsController < ApplicationController
       format.xml  { render :xml => @questions }
     end
  end
- 
 end
