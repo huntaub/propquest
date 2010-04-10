@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100404174025) do
+ActiveRecord::Schema.define(:version => 20100410181255) do
 
   create_table "answers", :force => true do |t|
     t.integer  "number"
@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(:version => 20100404174025) do
 
   create_table "questions", :force => true do |t|
     t.text     "title"
-    t.integer  "votes"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -30,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20100404174025) do
     t.integer  "d_total"
     t.integer  "d_length"
     t.integer  "user_id"
+    t.boolean  "description_needed"
+    t.integer  "vote_int",           :default => 0
   end
 
   create_table "sections", :force => true do |t|
@@ -48,6 +49,15 @@ ActiveRecord::Schema.define(:version => 20100404174025) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.integer  "role",               :default => 0
+  end
+
+  create_table "votes", :force => true do |t|
+    t.boolean  "up"
+    t.integer  "user_id"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

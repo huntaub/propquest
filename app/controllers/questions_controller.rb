@@ -3,6 +3,13 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.xml
   def index
+  	@question = Question.find(:all)
+  	@question.each do |q|
+  		if q.vote_int.nil?
+  			q.vote_int = 0
+  			q.save!
+  		end
+  	end
     @questions = Question.paginate :per_page => 8, :page => params[:page], :order => 'created_at DESC'
 
     respond_to do |format|
