@@ -3,13 +3,6 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.xml
   def index
-  	@question = Question.find(:all)
-  	@question.each do |q|
-  		if q.vote_int.nil?
-  			q.vote_int = 0
-  			q.save!
-  		end
-  	end
     @questions = Question.paginate :per_page => 8, :page => params[:page], :order => 'created_at DESC'
 
     respond_to do |format|
@@ -57,7 +50,7 @@ class QuestionsController < ApplicationController
   # POST /questions.xml
   def create
     @question = Question.new(params[:question])
-	@question.votes = 0
+	@question.vote_int = 0
 	@question.user = User.find_by_id(session[:user_id])
     respond_to do |format|
       if @question.save
