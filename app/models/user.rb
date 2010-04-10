@@ -31,6 +31,10 @@ class User < ActiveRecord::Base
 		self.hashed_password = User.encrypted_password(self.password, self.salt)
 	end
 	
+	def to_param
+		URI.escape(name)
+	end
+	
 private
 	
 		def self.encrypted_password(password,salt)

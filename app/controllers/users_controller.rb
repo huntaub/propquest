@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   end
 
   def edit
- 	@user = User.find_by_id(params[:id])
+ 	@user = User.find_by_name(URI.unencode(params[:id]))
   	unless User.find_by_id(session[:user_id]) == @user
   		@user = nil
   		redirect_to :controller => 'questions', :action => 'index'
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   end
 
   def show
-  	@user = User.find_by_id(params[:id])
+  	@user = User.find_by_name(URI.unencode(params[:id]))
   	@questions = Question.paginate :per_page => 5, :page => params[:page], :order => 'created_at DESC'
   end
 
@@ -35,7 +35,7 @@ class UsersController < ApplicationController
   end
 
   def update
-  	if User.find_by_id(params[:id]).update_attributes(params[:user])
+  	if User.find_by_name(URI.unencode(params[:id])).update_attributes(params[:user])
   		redirect_to :action => 'show', :id => params[:id]
   	else
   		render :action => 'edit'
