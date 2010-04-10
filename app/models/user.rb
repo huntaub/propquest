@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	has_many :questions
+	has_many :votes
 	has_attached_file :photo, :styles => { :small => "150x150>", :medium => "300x300>" },
 	                  :url  => "/assets/users/:id/:style/:basename.:extension",
 	                  :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension"

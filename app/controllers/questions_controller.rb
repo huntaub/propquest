@@ -25,6 +25,7 @@ class QuestionsController < ApplicationController
   # GET /questions/new
   # GET /questions/new.xml
   def new
+  	response.headers['Cache-Control'] = 'public, max-age=86400'
     @question = Question.new
 
     respond_to do |format|
@@ -88,12 +89,11 @@ class QuestionsController < ApplicationController
   def add_vote
   	if request.xhr?
 	  	@question = Question.find(params[:id])
-	  	if (@question.votes.blank?)
-	  		@question.votes = 1
-	  	else 
-	  	  	@question.votes += 1
-	  	end
-	  	@question.save!
+	  	vote = Vote.create
+	  	vote.up = true
+	  	vote.question_id = @question.id
+	  	vote.user_id = params[:user]
+	  	vote.save!
 	  	render :partial => 'votes', :locals => {:question => @question}
   	end
   end
@@ -101,12 +101,11 @@ class QuestionsController < ApplicationController
   def remove_vote
   	if request.xhr?
 	  	@question = Question.find(params[:id])
-	  	if (@question.votes.blank?)
-	  		@question.votes = -1
-	  	else 
-	  	  	@question.votes -= 1
-	  	end
-	  	@question.save!
+	  	vote = Vote.create
+	  	vote.up = false
+	  	vote.question_id = @question.id
+	  	vote.user_id = params[:user]
+	  	vote.save!
 	  	render :partial => 'votes', :locals => {:question => @question}
   	end
   end

@@ -1,9 +1,534 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  title: MyString
-  votes: 1
-
-two:
-  title: MyString
-  votes: 1
+--- 
+questions_035: 
+  votes: "0"
+  created_at: 2010-04-06 02:35:20
+  title: "United States Ambassador to France: \"If you do not let us base our nuclear missile sites within your borders, we would be forced to raise the import tax on all the goods we import from your nation.\""
+  updated_at: 2010-04-06 02:35:20
+  section_id: "4"
+  d_length: 
+  id: "37"
+  user_id: "1"
+  description: 
+  answer_id: "38"
+  d_total: 
+questions_024: 
+  votes: "0"
+  created_at: 2010-04-06 02:17:24
+  title: I would like to introduce our Environmental Pollution speaker, Mr. Roger Rogue. He is a member of the President's Committee on Pollution Control and is former Director of the State Wildlife Association.
+  updated_at: 2010-04-06 02:17:24
+  section_id: "3"
+  d_length: 
+  id: "26"
+  user_id: "1"
+  description: 
+  answer_id: "30"
+  d_total: 
+questions_013: 
+  votes: "0"
+  created_at: 2010-04-06 01:39:10
+  title: "Company representative to Senator: \"This proposed law should cover only ultra-dense metals. By that I mean metals, such as iron, whose atomic weight is 80 or over.\""
+  updated_at: 2010-04-06 01:39:10
+  section_id: "2"
+  d_length: 
+  id: "15"
+  user_id: "1"
+  description: 
+  answer_id: "29"
+  d_total: 
+questions_002: 
+  votes: "0"
+  created_at: 2010-04-06 01:26:36
+  title: All teenagers either drink or use drugs.
+  updated_at: 2010-04-06 01:26:36
+  section_id: "1"
+  d_length: 
+  id: "4"
+  user_id: "1"
+  description: 
+  answer_id: "3"
+  d_total: 
+questions_036: 
+  votes: "0"
+  created_at: 2010-04-06 02:35:46
+  title: But, Mom! I've simply got to have those Sassoon jeans! Nobody's wearing those creepy plain pockets any more. Everyone will laugh at me. I know they are $20 more, but you've got to give in.
+  updated_at: 2010-04-06 02:35:46
+  section_id: "4"
+  d_length: 
+  id: "38"
+  user_id: "1"
+  description: 
+  answer_id: "37"
+  d_total: 
+questions_025: 
+  votes: "0"
+  created_at: 2010-04-06 02:18:37
+  title: You don't have to have oily skin to need Oil-Free Moisturizer. All skin types can suffer from acne cosmetica. Allercreme has a full line of hypo-allergenic skin care products and cosmetics.
+  updated_at: 2010-04-06 02:18:37
+  section_id: "3"
+  d_length: 
+  id: "27"
+  user_id: "1"
+  description: 
+  answer_id: "26"
+  d_total: 
+questions_014: 
+  votes: "0"
+  created_at: 2010-04-06 01:39:35
+  title: You'll love this girl. She's neither short nor tall, nor fat nor thin; she's just right.
+  updated_at: 2010-04-06 01:39:35
+  section_id: "2"
+  d_length: 
+  id: "16"
+  user_id: "1"
+  description: 
+  answer_id: "16"
+  d_total: 
+questions_003: 
+  votes: "0"
+  created_at: 2010-04-06 01:26:52
+  title: My new invention, the Hula Wiggle, is going to make me a millionaire. I'm sure everyone will buy one.
+  updated_at: 2010-04-06 01:26:52
+  section_id: "1"
+  d_length: 
+  id: "5"
+  user_id: "1"
+  description: 
+  answer_id: "7"
+  d_total: 
+questions_037: 
+  votes: "0"
+  created_at: 2010-04-06 02:44:52
+  title: Harry Jones is 70, but he's still full of vim and vigor. You see, Harry is the president of the Tendermoor Mattress Company, makers of the world's best mattresses. So he sleeps good nights. Every mattress made in our factory is made just like Harry's. Exactly. We figure if it's good enough for Harry, it's good enough for you.
+  updated_at: 2010-04-06 02:44:52
+  section_id: "4"
+  d_length: 
+  id: "39"
+  user_id: "1"
+  description: 
+  answer_id: "41"
+  d_total: 
+questions_026: 
+  votes: "0"
+  created_at: 2010-04-06 02:19:00
+  title: "\"I can recognize the quality of Smirnoff Vodka. My guests demand its value,\" says Peter Valichnikoff, 1982 Nobel Prize winner and President of the National Science Founcation."
+  updated_at: 2010-04-06 02:19:00
+  section_id: "3"
+  d_length: 
+  id: "28"
+  user_id: "1"
+  description: 
+  answer_id: "21"
+  d_total: 
+questions_015: 
+  votes: "0"
+  created_at: 2010-04-06 01:57:00
+  title: Man is the highest being on the evolutionary ladder, according to biology. That's why women are inferior.
+  updated_at: 2010-04-06 01:57:00
+  section_id: "2"
+  d_length: 
+  id: "17"
+  user_id: "1"
+  description: 
+  answer_id: "18"
+  d_total: 
+questions_004: 
+  votes: "0"
+  created_at: 2010-04-06 01:27:10
+  title: You say that the police have arrested Mayor Simpson for bank robbery? He has been the only honest politician in our whole city for ten years. There's no way that he could have stolen money!
+  updated_at: 2010-04-06 01:27:10
+  section_id: "1"
+  d_length: 
+  id: "6"
+  user_id: "1"
+  description: 
+  answer_id: "10"
+  d_total: 
+questions_038: 
+  votes: "0"
+  created_at: 2010-04-06 02:47:25
+  title: "Form letter received through the mail: \"Because you are one of our most valued customers, we are sending you for 10 days' trial a new product we are introducing to the American market. If not satisfied, return after the trial period. If satisfied, kindly send payment.\""
+  updated_at: 2010-04-06 02:47:25
+  section_id: "4"
+  d_length: 
+  id: "40"
+  user_id: "1"
+  description: 
+  answer_id: "32"
+  d_total: 
+questions_027: 
+  votes: "0"
+  created_at: 2010-04-06 02:19:18
+  title: The Book of Tomorrow! Buy it today!
+  updated_at: 2010-04-06 02:19:18
+  section_id: "3"
+  d_length: 
+  id: "29"
+  user_id: "1"
+  description: 
+  answer_id: "25"
+  d_total: 
+questions_016: 
+  votes: "0"
+  created_at: 2010-04-06 01:57:52
+  title: Smith took 40 measurements of seven measuring tapes. None of them were exact enough.
+  updated_at: 2010-04-06 01:57:52
+  section_id: "2"
+  d_length: 
+  id: "18"
+  user_id: "1"
+  description: 
+  answer_id: "17"
+  d_total: 
+questions_005: 
+  votes: "0"
+  created_at: 2010-04-06 01:27:26
+  title: Dave is a typical programmer-you know, thick glasses, pale, skinny, and hardly able to talk to a normal human being.
+  updated_at: 2010-04-06 01:27:26
+  section_id: "1"
+  d_length: 
+  id: "7"
+  user_id: "1"
+  description: 
+  answer_id: "8"
+  d_total: 
+questions_040: 
+  votes: "0"
+  created_at: 2010-04-06 02:48:12
+  title: Be the first kid on your block to play the new fun game Spaz!
+  updated_at: 2010-04-06 02:48:12
+  section_id: "4"
+  d_length: 
+  id: "42"
+  user_id: "1"
+  description: 
+  answer_id: "34"
+  d_total: 
+questions_039: 
+  votes: "0"
+  created_at: 2010-04-06 02:47:50
+  title: Former President Bush says, "Hamburger is 66 cents a pound. Stop-n-Shop's price is 17 cents per pound less."
+  updated_at: 2010-04-06 02:47:50
+  section_id: "4"
+  d_length: 
+  id: "41"
+  user_id: "1"
+  description: 
+  answer_id: "36"
+  d_total: 
+questions_028: 
+  votes: "0"
+  created_at: 2010-04-06 02:19:52
+  title: Reck Shelves are functional. Recks can be used in the garage. Bedrooms, also, are brightened by Reck Shelves. Kitchens can be Recked delightfully. Use Reck Shelves in your rec room.
+  updated_at: 2010-04-06 02:19:52
+  section_id: "3"
+  d_length: 
+  id: "30"
+  user_id: "1"
+  description: 
+  answer_id: "24"
+  d_total: 
+questions_017: 
+  votes: "0"
+  created_at: 2010-04-06 01:58:30
+  title: |-
+    Smith: "For Cezanne (a 19th-century French painter) it's pretty poor, but still it's a whole lot better than a good many 20th-century French paintings."
+    Jones: "You should have heard Smith rave about that painting. He said that it was 'a whole lot better than 20th-century French paintings.'"
+  updated_at: 2010-04-06 01:58:30
+  section_id: "2"
+  d_length: 
+  id: "19"
+  user_id: "1"
+  description: 
+  answer_id: "14"
+  d_total: 
+questions_006: 
+  votes: "0"
+  created_at: 2010-04-06 01:27:42
+  title: The budget freeze is neither a conservative nor liberal proposal but is supported by both Republicans and Democrats.
+  updated_at: 2010-04-06 01:27:42
+  section_id: "1"
+  d_length: 
+  id: "8"
+  user_id: "1"
+  description: 
+  answer_id: "5"
+  d_total: 
+questions_041: 
+  votes: "0"
+  created_at: 2010-04-06 22:26:12
+  title: A man to his friend struggling in the pool, "Sink or swim."
+  updated_at: 2010-04-06 22:26:12
+  section_id: "1"
+  d_length: 
+  id: "43"
+  user_id: "1"
+  description: 
+  answer_id: "3"
+  d_total: 
+questions_030: 
+  votes: "0"
+  created_at: 2010-04-06 02:20:41
+  title: In the television commercial the person shown using the sponsor's product was in great physical shape and wearing well-fitting clothing. The person shown using the competitor's product was overweight and dressed in floppy clothes.
+  updated_at: 2010-04-06 02:20:41
+  section_id: "3"
+  d_length: 
+  id: "32"
+  user_id: "1"
+  description: 
+  answer_id: "19"
+  d_total: 
+questions_029: 
+  votes: "0"
+  created_at: 2010-04-06 02:20:15
+  title: Twitty has been extremely polite, quiet, and courteous tonight. He must have outgrown his earlier wild days.
+  updated_at: 2010-04-06 02:20:15
+  section_id: "3"
+  d_length: 
+  id: "31"
+  user_id: "1"
+  description: 
+  answer_id: "20"
+  d_total: 
+questions_018: 
+  votes: "0"
+  created_at: 2010-04-06 01:59:54
+  title: You students are so hard to handle. You all act like wound-up robots.
+  updated_at: 2010-04-06 01:59:54
+  section_id: "2"
+  d_length: 
+  id: "20"
+  user_id: "1"
+  description: 
+  answer_id: "12"
+  d_total: 
+questions_007: 
+  votes: "0"
+  created_at: 2010-04-06 01:28:16
+  title: Our country's budget deficit is tremendous. We are just spending too much money. The way to balance our budget is to just stop spending money.
+  updated_at: 2010-04-06 01:28:16
+  section_id: "1"
+  d_length: 
+  id: "9"
+  user_id: "1"
+  description: 
+  answer_id: "9"
+  d_total: 
+questions_042: 
+  votes: "0"
+  created_at: 2010-04-06 22:28:07
+  title: Why would we want to change our grocery bags from paper to plastic? We have been using paper bags for the last 20 years!
+  updated_at: 2010-04-06 22:28:07
+  section_id: "1"
+  d_length: 
+  id: "44"
+  user_id: "1"
+  description: 
+  answer_id: "5"
+  d_total: 
+questions_031: 
+  votes: "0"
+  created_at: 2010-04-06 02:33:28
+  title: Stay healthy. Take mild exercise every day. Walk whenever possible. Eat balanced meals. Get restful sleep on 'Nities Sleep-well Mattress.
+  updated_at: 2010-04-06 02:33:28
+  section_id: "4"
+  d_length: 
+  id: "33"
+  user_id: "1"
+  description: 
+  answer_id: "39"
+  d_total: 
+questions_020: 
+  votes: "0"
+  created_at: 2010-04-06 02:01:21
+  title: "\"But Miss Buxley,\" complained Tommy, \"you forbade me to call Maggie a lying vixen. I just wrote it on the board.\""
+  updated_at: 2010-04-06 02:04:25
+  section_id: "2"
+  d_length: 
+  id: "22"
+  user_id: "1"
+  description: 
+  answer_id: "13"
+  d_total: 
+questions_019: 
+  votes: "0"
+  created_at: 2010-04-06 02:00:27
+  title: "Ad: \"Blitz is brewed with tender loving care to give you real gusto in a great light beer.\" "
+  updated_at: 2010-04-06 02:00:27
+  section_id: "2"
+  d_length: 
+  id: "21"
+  user_id: "1"
+  description: 
+  answer_id: "11"
+  d_total: 
+questions_008: 
+  votes: "0"
+  created_at: 2010-04-06 01:28:36
+  title: I don't think we should invite David to Thanksgiving dinner. After all, his last name is Rosenberg.
+  updated_at: 2010-04-06 01:28:36
+  section_id: "1"
+  d_length: 
+  id: "10"
+  user_id: "1"
+  description: 
+  answer_id: "1"
+  d_total: 
+questions_043: 
+  votes: "0"
+  created_at: 2010-04-06 22:32:55
+  title: I think this is a good book. Would you like to read it?
+  updated_at: 2010-04-06 22:32:55
+  section_id: "1"
+  d_length: 
+  id: "45"
+  user_id: "1"
+  description: 
+  answer_id: "28"
+  d_total: 
+questions_032: 
+  votes: "0"
+  created_at: 2010-04-06 02:33:54
+  title: Please do not withdraw from Korea. With those big, powerful nations around us threatening, our small ill-prepared military doesn't stand a chance.
+  updated_at: 2010-04-06 02:33:54
+  section_id: "4"
+  d_length: 
+  id: "34"
+  user_id: "1"
+  description: 
+  answer_id: "31"
+  d_total: 
+questions_021: 
+  votes: "0"
+  created_at: 2010-04-06 02:11:12
+  title: Attendance at religious services is a must to be successful in this world. All the nation's business leaders-men such as Lee Iacocca-attend religious services regularly.
+  updated_at: 2010-04-06 02:11:12
+  section_id: "3"
+  d_length: 
+  id: "23"
+  user_id: "1"
+  description: 
+  answer_id: "23"
+  d_total: 
+questions_010: 
+  votes: "0"
+  created_at: 2010-04-06 01:29:08
+  title: I have a math test and an English test tomorrow. I don't know which one to study harder for, so I'll just wait to see how I do. Next time I'll study harder for whichever subject had the more difficult test.
+  updated_at: 2010-04-06 01:29:08
+  section_id: "1"
+  d_length: 
+  id: "12"
+  user_id: "1"
+  description: 
+  answer_id: "2"
+  d_total: 
+questions_009: 
+  votes: "0"
+  created_at: 2010-04-06 01:28:50
+  title: I know I've already had eight beers, but one more won't make any difference in the way I drive.
+  updated_at: 2010-04-06 01:28:50
+  section_id: "1"
+  d_length: 
+  id: "11"
+  user_id: "1"
+  description: 
+  answer_id: "4"
+  d_total: 
+questions_044: 
+  votes: "0"
+  created_at: 2010-04-06 22:35:10
+  title: Everyone needs a good breakfast to function well for the rest of the day. So why not start your day off right with a glass of Tropicana Orange Juice?
+  updated_at: 2010-04-07 01:49:58
+  section_id: "4"
+  d_length: 
+  id: "46"
+  user_id: "1"
+  description: 
+  answer_id: "39"
+  d_total: 
+questions_033: 
+  votes: "0"
+  created_at: 2010-04-06 02:34:40
+  title: As a Vice-President Hubert Humphrey makes a good drugstore clerk.
+  updated_at: 2010-04-06 02:34:40
+  section_id: "4"
+  d_length: 
+  id: "35"
+  user_id: "1"
+  description: 
+  answer_id: "33"
+  d_total: 
+questions_022: 
+  votes: "0"
+  created_at: 2010-04-06 02:12:23
+  title: Let's not give up. True, we have tried everything. We have telephoned; we have knocked on his door; we have written to him. And we have not yet received a cent from him. But where there's a will, there's a way.
+  updated_at: 2010-04-06 02:12:23
+  section_id: "3"
+  d_length: 
+  id: "24"
+  user_id: "1"
+  description: 
+  answer_id: "27"
+  d_total: 
+questions_011: 
+  votes: "0"
+  created_at: 2010-04-06 01:32:49
+  title: Mrs. Pratt knows she was rationalizing. Before we criticize Mrs. Pratt, we should ask ourselves if maybe we rationalize sometimes too.
+  updated_at: 2010-04-06 01:32:49
+  section_id: "1"
+  d_length: 
+  id: "13"
+  user_id: "1"
+  description: 
+  answer_id: "28"
+  d_total: 
+questions_034: 
+  votes: "0"
+  created_at: 2010-04-06 02:35:01
+  title: I cannot see how you can enjoy that piece of music. Why, it was a favorite of Hitler's.
+  updated_at: 2010-04-06 02:35:01
+  section_id: "4"
+  d_length: 
+  id: "36"
+  user_id: "1"
+  description: 
+  answer_id: "35"
+  d_total: 
+questions_023: 
+  votes: "0"
+  created_at: 2010-04-06 02:13:02
+  title: What a Grand Opening, Folks! On the very first day of business on Friday, Celestial Cesspools served 6,000 people and turned away 6,000 more.
+  updated_at: 2010-04-06 02:13:02
+  section_id: "3"
+  d_length: 
+  id: "25"
+  user_id: "1"
+  description: 
+  answer_id: "22"
+  d_total: 
+questions_012: 
+  votes: "0"
+  created_at: 2010-04-06 01:38:07
+  title: |-
+    Acme Paper Products President: "Our long term commitment is to increased growth." 
+    Possible investor: "Does that mean you will expand your plants and cut more forests?" 
+    President: "Our growth program will expand throughout the decade."
+  updated_at: 2010-04-06 01:38:07
+  section_id: "2"
+  d_length: 
+  id: "14"
+  user_id: "1"
+  description: 
+  answer_id: "15"
+  d_total: 
+questions_001: 
+  votes: "0"
+  created_at: 2010-04-06 01:26:16
+  title: The accident that caused me to run into the street light was caused by bumpy streets and the city's pot holes.
+  updated_at: 2010-04-06 01:26:16
+  section_id: "1"
+  d_length: 
+  id: "3"
+  user_id: "1"
+  description: 
+  answer_id: "6"
+  d_total: 

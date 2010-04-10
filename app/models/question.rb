@@ -2,6 +2,7 @@ class Question < ActiveRecord::Base
 	belongs_to :section
 	belongs_to :answer
 	belongs_to :user
+	has_many   :votes
 	validates_presence_of :title
 	validates_presence_of :answer
 	validates_presence_of :section

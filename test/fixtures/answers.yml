@@ -1,9 +1,428 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  number: 1
-  description: MyString
-
-two:
-  number: 1
-  description: MyString
+--- 
+answers_056: 
+  number: "6"
+  created_at: 2010-04-06 22:45:03
+  updated_at: 2010-04-06 22:45:03
+  section_id: "6"
+  id: "56"
+  description: Complex Question
+answers_045: 
+  number: "4"
+  created_at: 2010-04-06 22:40:15
+  updated_at: 2010-04-06 22:40:15
+  section_id: "5"
+  id: "45"
+  description: Hasty Generalization
+answers_034: 
+  number: "4"
+  created_at: 2010-04-06 02:28:35
+  updated_at: 2010-04-06 02:28:35
+  section_id: "4"
+  id: "34"
+  description: Appeal to Prestige
+answers_023: 
+  number: "5"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "23"
+  description: Status
+answers_012: 
+  number: "2"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "12"
+  description: Metaphor and Similie
+answers_001: 
+  number: "1"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "1"
+  description: Prejudice
+answers_057: 
+  number: "7"
+  created_at: 2010-04-06 22:45:27
+  updated_at: 2010-04-06 22:45:27
+  section_id: "6"
+  id: "57"
+  description: Inconsequent Argument
+answers_046: 
+  number: "5"
+  created_at: 2010-04-06 22:40:39
+  updated_at: 2010-04-06 22:40:39
+  section_id: "5"
+  id: "46"
+  description: Faulty Analogy
+answers_035: 
+  number: "5"
+  created_at: 2010-04-06 02:28:55
+  updated_at: 2010-04-06 02:28:55
+  section_id: "4"
+  id: "35"
+  description: Appeal to Prejudice
+answers_024: 
+  number: "6"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "24"
+  description: Repetition
+answers_013: 
+  number: "3"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "13"
+  description: Emphasis
+answers_002: 
+  number: "2"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "2"
+  description: Academic Detachment
+answers_058: 
+  number: "8"
+  created_at: 2010-04-06 22:46:07
+  updated_at: 2010-04-06 22:46:07
+  section_id: "6"
+  id: "58"
+  description: Attacking a Straw Man
+answers_047: 
+  number: "6"
+  created_at: 2010-04-06 22:40:57
+  updated_at: 2010-04-06 22:40:57
+  section_id: "5"
+  id: "47"
+  description: Composition
+answers_036: 
+  number: "6"
+  created_at: 2010-04-06 02:29:30
+  updated_at: 2010-04-06 02:29:30
+  section_id: "4"
+  id: "36"
+  description: Bargain Appeal
+answers_025: 
+  number: "7"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "25"
+  description: Slogans
+answers_014: 
+  number: "4"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "14"
+  description: Quotation Out of Context
+answers_003: 
+  number: "3"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "3"
+  description: Drawing the Line
+answers_059: 
+  number: "9"
+  created_at: 2010-04-06 22:46:33
+  updated_at: 2010-04-06 22:46:33
+  section_id: "6"
+  id: "59"
+  description: Victory by Definition
+answers_048: 
+  number: "7"
+  created_at: 2010-04-06 22:41:26
+  updated_at: 2010-04-06 22:41:26
+  section_id: "5"
+  id: "48"
+  description: Division
+answers_037: 
+  number: "8"
+  created_at: 2010-04-06 02:30:13
+  updated_at: 2010-04-06 02:30:13
+  section_id: "4"
+  id: "37"
+  description: Join the Bandwagon Appeal
+answers_026: 
+  number: "8"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "26"
+  description: Technical Jargon
+answers_015: 
+  number: "5"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "15"
+  description: Abstract Terms
+answers_004: 
+  number: "4"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "4"
+  description: Not Drawing the Line
+answers_060: 
+  number: "10"
+  created_at: 2010-04-06 22:46:54
+  updated_at: 2010-04-06 22:46:54
+  section_id: "6"
+  id: "60"
+  description: Begging the Question
+answers_049: 
+  number: "8"
+  created_at: 2010-04-06 22:41:45
+  updated_at: 2010-04-06 22:41:45
+  section_id: "5"
+  id: "49"
+  description: Non Sequitur
+answers_038: 
+  number: "9"
+  created_at: 2010-04-06 02:30:56
+  updated_at: 2010-04-06 02:30:56
+  section_id: "4"
+  id: "38"
+  description: Appeal to Practical Consequences
+answers_027: 
+  number: "9"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "27"
+  description: Sophistical Formula
+answers_016: 
+  number: "6"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "16"
+  description: Vagueness
+answers_005: 
+  number: "5"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "5"
+  description: Conservatism, Radicalism, Moderatism
+answers_061: 
+  number: "0"
+  created_at: 2010-04-06 22:47:43
+  updated_at: 2010-04-06 22:47:43
+  section_id: "6"
+  id: "61"
+  description: No Technique
+answers_050: 
+  number: "0"
+  created_at: 2010-04-06 22:42:13
+  updated_at: 2010-04-06 22:42:13
+  section_id: "5"
+  id: "50"
+  description: No Technique
+answers_039: 
+  number: "10"
+  created_at: 2010-04-06 02:31:54
+  updated_at: 2010-04-06 02:31:54
+  section_id: "4"
+  id: "39"
+  description: Passing from the Acceptable to the Dubious
+answers_028: 
+  number: "0"
+  created_at: 2010-04-06 01:31:17
+  updated_at: 2010-04-06 01:31:17
+  section_id: "1"
+  id: "28"
+  description: No Technique
+answers_017: 
+  number: "7"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "17"
+  description: Ambiguity
+answers_006: 
+  number: "6"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "6"
+  description: Rationalization
+answers_051: 
+  number: "1"
+  created_at: 2010-04-06 22:43:04
+  updated_at: 2010-04-06 22:43:04
+  section_id: "6"
+  id: "51"
+  description: Diversion
+answers_040: 
+  number: "0"
+  created_at: 2010-04-06 02:33:23
+  updated_at: 2010-04-06 02:33:23
+  section_id: "4"
+  id: "40"
+  description: No Technique
+answers_029: 
+  number: "0"
+  created_at: 2010-04-06 01:33:28
+  updated_at: 2010-04-06 01:33:28
+  section_id: "2"
+  id: "29"
+  description: No Technique
+answers_018: 
+  number: "8"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "18"
+  description: Shift of Meaning
+answers_007: 
+  number: "7"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "7"
+  description: Wishful Thinking
+answers_052: 
+  number: "2"
+  created_at: 2010-04-06 22:43:26
+  updated_at: 2010-04-06 22:43:26
+  section_id: "6"
+  id: "52"
+  description: Disproving a Minor Point
+answers_041: 
+  number: "7"
+  created_at: 2010-04-06 02:37:24
+  updated_at: 2010-04-06 02:37:24
+  section_id: "4"
+  id: "41"
+  description: Folksy Appeal
+answers_030: 
+  number: "0"
+  created_at: 2010-04-06 01:33:51
+  updated_at: 2010-04-06 01:33:51
+  section_id: "3"
+  id: "30"
+  description: No Technique
+answers_019: 
+  number: "1"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "19"
+  description: Appearance
+answers_008: 
+  number: "8"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "8"
+  description: Tabloid Thinking
+answers_053: 
+  number: "3"
+  created_at: 2010-04-06 22:43:47
+  updated_at: 2010-04-06 22:43:47
+  section_id: "6"
+  id: "53"
+  description: Ad Hominem
+answers_042: 
+  number: "1"
+  created_at: 2010-04-06 22:38:24
+  updated_at: 2010-04-06 22:38:35
+  section_id: "5"
+  id: "42"
+  description: Concurrency
+answers_031: 
+  number: "1"
+  created_at: 2010-04-06 02:22:51
+  updated_at: 2010-04-06 02:22:51
+  section_id: "4"
+  id: "31"
+  description: Appeal to Pity
+answers_020: 
+  number: "2"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "20"
+  description: Manner
+answers_009: 
+  number: "9"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "9"
+  description: Causal Oversimplification
+answers_054: 
+  number: "4"
+  created_at: 2010-04-06 22:44:29
+  updated_at: 2010-04-06 22:44:29
+  section_id: "6"
+  id: "54"
+  description: Appeal to Ignorance
+answers_043: 
+  number: "2"
+  created_at: 2010-04-06 22:38:59
+  updated_at: 2010-04-06 22:38:59
+  section_id: "5"
+  id: "43"
+  description: Post Hoc
+answers_032: 
+  number: "2"
+  created_at: 2010-04-06 02:23:31
+  updated_at: 2010-04-06 02:23:31
+  section_id: "4"
+  id: "32"
+  description: Appeal to Flattery
+answers_021: 
+  number: "3"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "21"
+  description: Degrees and Titles
+answers_010: 
+  number: "10"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "1"
+  id: "10"
+  description: Inconceivability
+answers_055: 
+  number: "5"
+  created_at: 2010-04-06 22:44:47
+  updated_at: 2010-04-06 22:44:47
+  section_id: "6"
+  id: "55"
+  description: Leading Question
+answers_044: 
+  number: "3"
+  created_at: 2010-04-06 22:39:26
+  updated_at: 2010-04-06 22:39:26
+  section_id: "5"
+  id: "44"
+  description: Selected Instances
+answers_033: 
+  number: "3"
+  created_at: 2010-04-06 02:27:27
+  updated_at: 2010-04-06 02:27:27
+  section_id: "4"
+  id: "33"
+  description: Appeal to Ridicule
+answers_022: 
+  number: "4"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "3"
+  id: "22"
+  description: Numbers
+answers_011: 
+  number: "1"
+  created_at: 2010-04-04 17:43:55
+  updated_at: 2010-04-04 17:43:55
+  section_id: "2"
+  id: "11"
+  description: Emotional Terms
