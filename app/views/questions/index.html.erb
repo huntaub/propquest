@@ -53,9 +53,21 @@
     		<span id='<%= "rate" + question.id.to_s %>'>
     			<%= render :partial => 'questions/link_to_rate', :locals => {:question => question} %>
    		 	</span>
-   		<% if session[:user_id] == question.user_id %>
-    		<%= link_to 'Edit', edit_question_path(question) %>
-    		<%= link_to 'Delete', question, :method => :delete %>
+   		<% if logged_in %>
+	   		<% if session[:user_id] == question.user_id %>
+	    		<%= link_to 'Edit', edit_question_path(question) %>
+	    		<%= link_to 'Delete', question, :method => :delete %>
+	    		<% if question.description_needed %>
+	    			<a>Flagged</a>
+	    		<% end %>
+	    	<% elsif User.find_by_id(session[:user_id]).role == 1 %>
+	    		<%= link_to 'Edit', edit_question_path(question) %>
+	    		<% if question.description_needed %>
+	    			<a>Flagged</a>
+	    		<% else %>
+	    			<%= link_to 'Flag as Needing Description', :action => "flag", :id => question %>
+	    		<% end %>
+	    	<% end %>
     	<% end %>
     		<%= link_to user_name(question.user), question.user, :class => 'right' %>
     	</span>

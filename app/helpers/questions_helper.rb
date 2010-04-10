@@ -1,14 +1,6 @@
 module QuestionsHelper
 	def num_votes(question)
-		total = 0
-		question.votes.each do |vote|
-			if vote.up
-				total += 1
-			else
-				total -= 1
-			end
-		end
-		total
+		question.vote_int
 	end
 	
 	def already_voted(user,question)

@@ -8,4 +8,11 @@
 	<%= user_photo(user, :small) %>
 	<br/>
 	<%= link_to "Logout", :controller => :users, :action => :logout %>
+	<% if 0 == 1 %>
+	<br/><br/>
+	<% num = num_questions_needing_description(user) %>
+	<% unless num == 0 %>
+		<%= link_to "Needs Description (#{num})", :controller => 'users', :action => 'flagged_questions', :id => user %>
+	<% end %>
+	<% end %>
 <% end %>

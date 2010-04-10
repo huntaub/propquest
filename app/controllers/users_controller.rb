@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   def edit
  	@user = User.find_by_name(URI.decode(params[:id]))
-  	unless User.find_by_id(session[:user_id]) == @user
+  	unless User.find_by_id(sessdion[:user_id]) == @user
   		@user = nil
   		redirect_to :controller => 'questions', :action => 'index'
   	end
@@ -16,6 +16,10 @@ class UsersController < ApplicationController
 
   def show
   	@user = User.find_by_name(URI.decode(params[:id]))
+  	if @user.nil?
+  		flash[:notice] = "Stop messing with URLs."
+  		redirect_to :controller => 'questions', :action => 'index'
+  	end
   	@questions = Question.paginate :per_page => 5, :page => params[:page], :order => 'created_at DESC'
   end
 
@@ -61,5 +65,11 @@ class UsersController < ApplicationController
   def logout
   	session[:user_id] = false
   	redirect_to :controller => 'questions', :action => 'index'
+  end
+  
+  def flagged_questions
+  	@user = User.find_by_name(params[:id])
+  	@questions = @user.questions.find_all_by_description_needed(true).paginate
+  	render "questions/index" 
   end
 end

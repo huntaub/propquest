@@ -37,8 +37,10 @@ class QuestionsController < ApplicationController
   # GET /questions/1/edit
   def edit
     @question = Question.find(params[:id])
-    unless @question.user == User.find(session[:user_id])
+    @user = User.find(session[:user_id])
+    unless @question.user == @user || @user.role == 1
       @question = nil
+      @user = nil
       flash[:notice] = "Stop messing with URLs."
       redirect_to :action => "index"
     end
@@ -66,8 +68,10 @@ class QuestionsController < ApplicationController
   # PUT /questions/1.xml
   def update
     @question = Question.find(params[:id])
-    unless @question.user == User.find(session[:user_id])
+    @user = User.find(session[:user_id])
+    unless @question.user == @user || @user.role == 1
       @question = nil
+      @user = nil
       flash[:notice] = "Stop messing with URLs."
       redirect_to :action => "index"
     end
@@ -104,6 +108,8 @@ class QuestionsController < ApplicationController
   def add_vote
   	if request.xhr?
 	  	@question = Question.find(params[:id])
+	  	@question.vote_int += 1
+	  	@question.save!
 	  	vote = Vote.create
 	  	vote.up = true
 	  	vote.question_id = @question.id
@@ -118,6 +124,8 @@ class QuestionsController < ApplicationController
   def remove_vote
   	if request.xhr?
 	  	@question = Question.find(params[:id])
+	  	@question.vote_int -= 1
+	  	@question.save!
 	  	vote = Vote.create
 	  	vote.up = false
 	  	vote.question_id = @question.id
@@ -212,14 +220,21 @@ class QuestionsController < ApplicationController
  
  def top_rated
  	if params[:id].blank?
- 		@questions = Question.paginate :per_page => 8, :page => params[:page], :order => 'votes DESC'
+ 		@questions = Question.paginate :per_page => 8, :page => params[:page], :order => 'vote_int DESC'
  	else
  		@section = Section.find(params[:id])
- 		@questions = @section.questions.paginate :per_page => 8, :page => params[:page], :order => 'votes DESC'
+ 		@questions = @section.questions.paginate :per_page => 8, :page => params[:page], :order => 'vote_int DESC'
  	end
     respond_to do |format|
       format.html { render 'index' }
       format.xml  { render :xml => @questions }
     end
+ end
+ 
+ def flag
+ 	@question = Question.find_by_id(params[:id])
+ 	@question.description_needed = true
+ 	@question.save!
+ 	render "show"
  end
 end
