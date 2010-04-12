@@ -197,7 +197,7 @@ class QuestionsController < ApplicationController
 	 	@question = Question.random(params[:id], session[:q_used])
 	 	session[:q_used] << @question.id
 	 	render "quiz/quiz"
- 	else 
+ 	else
  		session[:q_num] += 1
  		@old_question = Question.find(params[:question])
  		if params[:id].to_i == @old_question.answer.id
@@ -208,11 +208,11 @@ class QuestionsController < ApplicationController
  			@answer = Question.find(params[:question]).answer
  			@correct = false
  		end
- 		@section = Section.find_by_id(session[:section])
- 		@question = Question.random(session[:section], session[:q_used])
- 		session[:q_used] << @question.id
  		unless session[:q_num].to_i > session[:questions].to_i
-	 		render "quiz/quiz"	
+ 			@section = Section.find_by_id(session[:section])
+ 			@question = Question.random(session[:section], session[:q_used])
+ 			session[:q_used] << @question.id
+ 			render "quiz/quiz"	
  		else
  			render "quiz/end"
  		end
