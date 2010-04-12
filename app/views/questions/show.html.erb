@@ -10,7 +10,7 @@
 </tr>
 </table>
 <h3 class='showTitle'>
-  <%=h @question.title %>
+  <%=h(@question.title).gsub("\n","<br/>")  %>
 </h3>
 
 <div class='showAnswer'>

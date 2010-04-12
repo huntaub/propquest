@@ -1,5 +1,5 @@
 <h1> Question <%=h session[:q_num] %> of <%=h session[:questions] %> for Section <%=h @section.name %>
-<h2> <%=h @question.title %> </h2>
+<h2> <%=h(@question.title).gsub("\n","<br/>")  %> </h2>
 <div id='score'>
 	<p> <%= pluralize(session[:score].to_i, 'point') %> </p>
 	<% if session[:q_num].to_i > 1 %>
