@@ -12,8 +12,12 @@ class ApplicationController < ActionController::Base
 private
 
 	def authorize
-		unless User.find_by_id(session[:user_id])
+		if session[:user_id] == 'f'
 			redirect_to :controller => 'users', :action => 'login'
+		else
+			unless User.find_by_id(session[:user_id])
+				redirect_to :controller => 'users', :action => 'login'
+			end
 		end
 	end
 end
