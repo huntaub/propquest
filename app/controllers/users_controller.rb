@@ -51,7 +51,6 @@ class UsersController < ApplicationController
   
   def login
  	if request.post?
- 		reset_session
   		user = User.authenticate(params[:name], params[:password])
   		if user
   			session[:user_id] = user.id

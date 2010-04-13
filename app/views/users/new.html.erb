@@ -2,7 +2,7 @@
 <% form_for @user, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
 	<p>
-		<%= f.label :name, "Username (Max 8 characters)" %>
+		<%= f.label :name, "Username (Max 12 characters)" %>
 		<%= f.text_field :name %>
 	</p>
 	<p>

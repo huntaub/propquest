@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 	validates_uniqueness_of :name
 	validates_presence_of :name
 	validates_presence_of :hashed_password
-	validates_length_of :name, :maximum => 8
+	validates_length_of :name, :maximum => 12
 
 	def self.authenticate(name,password)
 		user = self.find_by_name(name)
