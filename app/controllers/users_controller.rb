@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_filter :authorize, :except => [:show, :login, :new, :create]
 
   def new
-  	response.headers['Cache-Control'] = 'public, max-age=86400'
   	@user = User.new
   end
 
