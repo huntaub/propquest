@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def edit
  	@user = User.find_by_name(URI.decode(params[:id]))
-  	unless User.find_by_id(sessdion[:user_id]) == @user
+  	unless User.find_by_id(session[:user_id]) == @user
   		@user = nil
   		redirect_to :controller => 'questions', :action => 'index'
   	end
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   		flash[:notice] = "Stop messing with URLs."
   		redirect_to :controller => 'questions', :action => 'index'
   	end
-  	@questions = Question.paginate :per_page => 5, :page => params[:page], :order => 'created_at DESC'
+  	@questions = @user.questions.paginate :per_page => 5, :page => params[:page], :order => 'created_at DESC'
   end
 
   def create
