@@ -25,7 +25,6 @@ class QuestionsController < ApplicationController
   # GET /questions/new
   # GET /questions/new.xml
   def new
-  	response.headers['Cache-Control'] = 'public, max-age=86400'
     @question = Question.new
 
     respond_to do |format|
