@@ -1,6 +1,6 @@
 <div class='uInfo'>
 	<h1> <%=h user_name(@user) %> </h1>
-	<h2> <%h= pluralize(@user.questions.length, 'question') %> </h2>
+	<h2> <%=h pluralize(@user.questions.length, 'question') %> </h2>
 	<%= user_photo (@user, :medium) %>
 	<br/>
 	<% unless session[:user_id] == 'f' %>
