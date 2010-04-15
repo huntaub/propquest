@@ -7,14 +7,5 @@
 		<%= f.text_field :password %>
 	</p>
 	
-	<p>
-		Current Image <br/>
-		<%= user_photo(@user, :small) %>
-	
-	<p>
-		<%= f.label :photo, "New User Image" %>
-		<%= f.file_field :photo %>
-	</p>
-	
 	<%= f.submit %>
 <% end %>
