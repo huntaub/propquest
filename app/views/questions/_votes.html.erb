@@ -10,12 +10,14 @@
 	<% user = User.find_by_id(session[:user_id]) %>
 	<% unless already_voted(user, question) %>
 		<%= link_to_remote "+",
-				:url => {:action => :add_vote, 
+				:url => {:controller => :questions,
+						 :action => :add_vote, 
 						 :id     => question.id,
 						 :user   => user.id},
 		 		:update => 'votes'+question.id.to_s %>
 		<%= link_to_remote "-",
-				:url => {:action => :remove_vote, 
+				:url => {:controller => :questions,
+						 :action => :remove_vote, 
 						 :id     => question.id,
 						 :user   => user.id},
 			 	:update => 'votes'+question.id.to_s %>

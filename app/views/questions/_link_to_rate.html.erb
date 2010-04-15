@@ -1,6 +1,6 @@
 <% if logged_in %>
 <%= link_to_remote 'Rate Difficulty', 
-		:url => {:action => :rate, :id => question.id},
+		:url => {:controller => :questions, :action => :rate, :id => question.id},
 		:update => 'rate' + question.id.to_s
 %>
 <% end %>
