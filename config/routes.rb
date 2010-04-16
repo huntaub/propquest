@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :questions, :collection => { :quiz_options => :get, :top_rated => :get }, :member => { :flag => :get, :section => :get }
   map.resources :users, :collection => { :logout => :get, :login => :get}
-  map.resources :answers
+  map.resources :answers, :member => { :top_rated => :get }
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
