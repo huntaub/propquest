@@ -106,15 +106,19 @@ class QuestionsController < ApplicationController
   
   def add_vote
   	if request.xhr?
-	  	@question = Question.find(params[:id])
-	  	@question.vote_int += 1
-	  	@question.save!
-	  	vote = Vote.create
-	  	vote.up = true
-	  	vote.question_id = @question.id
-	  	vote.user_id = params[:user]
-	  	vote.save!
-	  	render :partial => 'votes', :locals => {:question => @question}
+	  	unless Vote.find_by_user_id_and_question_id(params[:user],params[:id])
+	  		@question = Question.find(params[:id])
+		  	@question.vote_int += 1
+		  	@question.save!
+		  	vote = Vote.create
+		  	vote.up = true
+		  	vote.question_id = @question.id
+		  	vote.user_id = params[:user]
+		  	vote.save!
+		  	render :partial => 'votes', :locals => {:question => @question}
+	  	else
+	  		redirect_to :action => 'index'
+	  	end
   	else
   		redirect_to :action => 'index'
   	end
