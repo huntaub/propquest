@@ -1,7 +1,7 @@
 <br/>
 <table class='showInfo'>
 <tr>
-<td class='<%= 'votes'+@question.id.to_s %>'>
+<td class='votes' id='<%= 'votes'+@question.id.to_s %>'>
 		<%= render :partial => 'votes', :locals => {:question => @question} %>
 </td>
 <td class='ratingTD' id='<%= "rating" + @question.id.to_s %>'>
