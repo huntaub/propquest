@@ -3,6 +3,12 @@ body {
 	background: #51545c url(../images/metal.jpg) fixed;
 }
 
+div.ads {
+	width: 800px;
+	margin-left: 15%;
+	text-align: center;
+}
+
 div#all {
 	width: 800px;
 	margin-left: 15%;
